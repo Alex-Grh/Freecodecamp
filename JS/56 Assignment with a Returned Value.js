@@ -13,3 +13,13 @@ processed should have a value of 2
 
 You should assign processArg to processed
 */
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+  
+}
+processed= processArg(7);
+processArg();
+// Only change code below this line

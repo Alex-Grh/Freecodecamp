@@ -1,15 +1,21 @@
 <!--
-   Decrease the Opacity of an Element
-The opacity property in CSS is used to adjust the opacity, or conversely, the transparency for an item.
+   se the text-transform Property to Make Text Uppercase
+The text-transform property in CSS is used to change the appearance of text. It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements.
 
-A value of 1 is opaque, which isn't transparent at all.
-A value of 0.5 is half see-through.
-A value of 0 is completely transparent.
-The value given will apply to the entire element, whether that's an image with some transparency, or the foreground and background colors for a block of text.
+The following table shows how the different text-transformvalues change the example text "Transform me".
 
-Set the opacity of the anchor tags to 0.7 using links class to select them.
+Value	Result
+lowercase	"transform me"
+uppercase	"TRANSFORM ME"
+capitalize	"Transform Me"
+initial	Use the default value
+inherit	Use the text-transform value from the parent element
+none	Default: Use the original text
+Transform the text of the h4 to be uppercase using the text-transform property.
 
-Your code should set the opacity property to 0.7 on the anchor tags by selecting the class of links.
+The h4 text should be uppercase.
+
+The original text of the h4 should not be changed.
 -->
 <style>
    h4 {
@@ -17,6 +23,7 @@ Your code should set the opacity property to 0.7 on the anchor tags by selecting
      background-color: rgba(45, 45, 45, 0.1);
      padding: 10px;
      font-size: 27px;
+ text-transform: uppercase;
    }
    p {
      text-align: justify;
@@ -24,7 +31,7 @@ Your code should set the opacity property to 0.7 on the anchor tags by selecting
    .links {
      text-align: left;
      color: black;
- opacity: 0.7;
+     opacity: 0.7;
    }
    #thumbnail {
      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);

@@ -29,3 +29,16 @@ testGreaterThan(150) should return the string Over 100
 You should use the > operator at least twice
 */
 
+function testGreaterThan(val) {
+   if (val>100) {  // Change this line
+     return "Over 100";
+   }
+ 
+   if (val>10) {  // Change this line
+     return "Over 10";
+   }
+ 
+   return "10 or Under";
+ }
+ 
+ testGreaterThan(10);

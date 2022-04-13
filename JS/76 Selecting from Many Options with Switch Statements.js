@@ -55,6 +55,4 @@ function caseInSwitch(val) {
    return answer;
  }
  
- caseInSwitch(1);
- 
- 
+ caseInSwitch(1); 

@@ -35,22 +35,21 @@ Your code should use dot and bracket notation to access myPlants.
 */
 const myPlants = [
    {
-     type: "flowers",
-     list: [
-       "rose",
-       "tulip",
-       "dandelion"
-     ]
+      type: "flowers",
+      list: [
+         "rose",
+         "tulip",
+         "dandelion"
+      ]
    },
    {
-     type: "trees",
-     list: [
-       "fir",
-       "pine",
-       "birch"
-     ]
+      type: "trees",
+      list: [
+         "fir",
+         "pine",
+         "birch"
+      ]
    }
- ];
- 
- const secondTree = myPlants[1].list[1];;
- 
+];
+
+const secondTree = myPlants[1].list[1];;

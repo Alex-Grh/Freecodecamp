@@ -17,10 +17,18 @@ You should be using a for loop for this.
 
 myArray should equal [1, 3, 5, 7, 9].*/
 
-// Setup
+// Вариант 1
+/*
 const myArray = [];
 for (let i = 0; i < 10; i++) {
 if (i % 2 == 0) continue;
   myArray.push(i);
 }
+*/
 
+// Setup
+const myArray = [];
+for (let i = 1; i <= 9; i += 2) {
+  myArray.push(i);
+}
+// Only change code below this line

@@ -21,3 +21,10 @@ You should properly export uppercaseString.
 
 You should properly export lowercaseString.
 */
+export const uppercaseString = (string) => {
+   return string.toUpperCase();
+}
+
+export const lowercaseString = (string) => {
+   return string.toLowerCase()
+}

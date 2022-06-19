@@ -28,3 +28,7 @@ Waiting:Your regex vowelRegex should use the global flag.
 Waiting:Your regex vowelRegex should use the case insensitive flag.
 Waiting:Your regex should not match any consonants.
 */
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; // Change this line
+let result = quoteSample.match(vowelRegex); // Change this line
+

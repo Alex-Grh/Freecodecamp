@@ -23,3 +23,9 @@ Waiting:myArray[1] should not be equal to the letter b
 Waiting:myArray[2] should be equal to the letter c
 Waiting:myArray[3] should be equal to the letter d
 */
+
+let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = "f";
+// Only change code above this line
+console.log(myArray);

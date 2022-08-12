@@ -20,3 +20,12 @@ Waiting:mixedNumbers(["IV", 5, "six"]) should now return ["I", 2, "three", "IV",
 Waiting:The mixedNumbers function should utilize the push() method
 Waiting:The mixedNumbers function should utilize the unshift() method
 */
+function mixedNumbers(arr) {
+   // Only change code below this line
+   arr.push(7, 'VIII', 9);
+   arr.unshift('I', 2, 'three');
+   // Only change code above this line
+   return arr;
+}
+
+console.log(mixedNumbers(['IV', 5, 'six']));

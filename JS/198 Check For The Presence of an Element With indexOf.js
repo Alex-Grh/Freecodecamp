@@ -21,3 +21,13 @@ Waiting:quickCheck([3, 5, 9, 125, 45, 2], 125) should return true
 Waiting:quickCheck([true, false, false], undefined) should return false
 Waiting:The quickCheck function should utilize the indexOf() method
 */
+function quickCheck(arr, elem) {
+   // Only change code below this line
+   if (arr.indexOf(elem) >= 0) {
+      return true;
+   }
+   return false;
+   // Only change code above this line
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));

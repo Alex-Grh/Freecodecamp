@@ -13,7 +13,11 @@ Waiting:reverseString("Howdy") should return the string ydwoH.
 Waiting:reverseString("Greetings from Earth") should return the string htraE morf sgniteerG.
 */
 function reverseString(str) {
-   return str.reverse();
- }
- 
- reverseString("hello");
+   return str
+      .split("")
+      .reverse()
+      .join("");
+}
+
+reverseString("hello");
+

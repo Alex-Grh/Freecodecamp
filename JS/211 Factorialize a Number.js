@@ -17,3 +17,13 @@ Waiting:factorialize(10) should return 3628800.
 Waiting:factorialize(20) should return 2432902008176640000.
 Waiting:factorialize(0) should return 1.
 */
+
+function factorialize(num) {
+   let product = 1;
+   for (let i = 2; i <= num; i++) {
+     product *= i;
+   }
+   return product;
+ }
+ factorialize(5);
+ 

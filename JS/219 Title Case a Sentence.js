@@ -11,7 +11,12 @@ Waiting:titleCase("sHoRt AnD sToUt") should return the string Short And Stout.
 Waiting:titleCase("HERE IS MY HANDLE HERE IS MY SPOUT") should return the string Here Is My Handle Here Is My Spout.
 */
 function titleCase(str) {
-   return str;
+   const newTitle = str.split(" ");
+   const updatedTitle = [];
+   for (let st in newTitle) {
+     updatedTitle[st] = newTitle[st][0].toUpperCase() + newTitle[st].slice(1).toLowerCase();
+   }
+   return updatedTitle.join(" ");
  }
  
  titleCase("I'm a little tea pot");

@@ -21,3 +21,9 @@ Waiting:Dog should have a name property set to a string.
 Waiting:Dog should have a color property set to a string.
 Waiting:Dog should have a numLegs property set to a number.
 */
+
+function Dog() {
+   this.name = "Albert";
+   this.color = "blue";
+   this.numLegs = 2;
+ }

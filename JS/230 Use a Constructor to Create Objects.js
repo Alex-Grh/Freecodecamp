@@ -26,3 +26,11 @@ Tests
 Waiting:hound should be created using the Dog constructor.
 Waiting:Your code should use the new operator to create an instance of Dog.
 */
+
+function Dog() {
+   this.name = "Rupert";
+   this.color = "brown";
+   this.numLegs = 4;
+ }
+ let hound = new Dog();
+ // Only change code below this line

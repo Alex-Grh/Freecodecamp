@@ -27,3 +27,10 @@ Waiting:Dog should receive an argument for color.
 Waiting:Dog should have property numLegs set to 4.
 Waiting:terrier should be created using the Dog constructor.
 */
+
+function Dog(name, color) {
+   this.name = name;
+     this.color = color;
+     this.numLegs = 4;
+   }
+   let terrier = new Dog("Bruce", "red");

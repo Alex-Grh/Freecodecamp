@@ -31,3 +31,11 @@ Waiting:myHouse should have a numBedrooms attribute set to a number.
 Waiting:You should verify that myHouse is an instance of House using the instanceof operator.
 */
 
+function House(numBedrooms) {
+   this.numBedrooms = numBedrooms;
+ }
+  // Only change code below this line
+ let myHouse = {
+   numBedrooms: 2
+   };
+   myHouse instanceof House;

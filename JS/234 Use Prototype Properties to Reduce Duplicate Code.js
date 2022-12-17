@@ -20,3 +20,13 @@ Waiting:beagle should have a numLegs property.
 Waiting:beagle.numLegs should be a number.
 Waiting:numLegs should be a prototype property not an own property.
 */
+
+function Dog(name) {
+   this.name = name;
+}
+
+
+
+// Only change code above this line
+let beagle = new Dog("Snoopy");
+Dog.prototype.numLegs = 2;

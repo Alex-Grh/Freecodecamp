@@ -27,3 +27,16 @@ Waiting:joinDogFraternity should be defined as a function.
 Waiting:joinDogFraternity should return true if candidate is an instance of Dog.
 Waiting:joinDogFraternity should use the constructor property.
 */
+
+function Dog(name) {
+   this.name = name;
+ }
+ 
+ // Only change code below this line
+ function joinDogFraternity(candidate) {
+  if (candidate.constructor === Dog) {
+     return true;
+   } else {
+     return false;
+   }
+ }

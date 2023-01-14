@@ -70,33 +70,31 @@ function Animal() { }
 
 Animal.prototype = {
   constructor: Animal,
-  
-
 };
 */
 
 function Cat(name) {
    this.name = name;
- }
- 
- Cat.prototype = {
+}
+
+Cat.prototype = {
    constructor: Cat,
-  
- };
- 
- function Bear(name) {
+
+};
+
+function Bear(name) {
    this.name = name;
- }
- 
- Bear.prototype = {
+}
+
+Bear.prototype = {
    constructor: Bear,
- };
- 
- function Animal() { }
- 
- Animal.prototype = {
+};
+
+function Animal() { }
+
+Animal.prototype = {
    constructor: Animal,
-   eat: function() {
-     console.log("nom nom nom");
+   eat: function () {
+      console.log("nom nom nom");
    }
- };
+};

@@ -34,3 +34,21 @@ Waiting:The constructor for beagle should be set to Dog.
 Waiting:beagle.eat() should log the string nom nom nom
 Waiting:beagle.bark() should log the string Woof!
 */
+
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+
+function Dog() { }
+
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function() {
+  console.log("Woof!");
+};
+// Add your code above this line
+
+let beagle = new Dog();
+
+beagle.eat(); // Should print "nom nom nom"
+beagle.bark(); // Should print "Woof!"

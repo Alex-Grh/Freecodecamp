@@ -20,11 +20,12 @@ Waiting:Your incrementer function should return a value that is one larger than 
 Waiting:Your incrementer function should return a value based on the global fixedValue variable value.
 */
 // The global variable
+// The global variable
 let fixedValue = 4;
 
 function incrementer() {
   // Only change code below this line
-
+return fixedValue + 1;
 
   // Only change code above this line
 }

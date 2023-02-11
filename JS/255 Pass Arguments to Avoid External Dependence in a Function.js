@@ -21,3 +21,13 @@ Waiting:Your function incrementer should not change the value of fixedValue (whi
 Waiting:Your incrementer function should take an argument.
 Waiting:Your incrementer function should return a value that is one larger than the fixedValue value.
 */
+
+// The global variable
+let fixedValue = 4;
+
+// Only change code below this line
+function incrementer(a) {
+   return a + 1;
+
+   // Only change code above this line
+}

@@ -18,3 +18,26 @@ Waiting:add(bookList, "A Brief History of Time") should return ["The Hound of th
 Waiting:remove(bookList, "On The Electrodynamics of Moving Bodies") should return ["The Hound of the Baskervilles", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"].
 Waiting:remove(add(bookList, "A Brief History of Time"), "On The Electrodynamics of Moving Bodies"); should equal ["The Hound of the Baskervilles", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae", "A Brief History of Time"].
 */
+// The global variable
+const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+// Change code below this line
+function add(arr, bookName) {
+
+ let newArr = [...arr]; // Copy the bookList array to a new array.
+  newArr.push(bookName); // Add bookName parameter to the end of the new array.
+  return newArr; // Return the new array.
+  
+  // Change code above this line
+}
+
+// Change code below this line
+function remove(arr, bookName) {
+  let newArr = [...arr]; // Copy the bookList array to a new array.
+  if (newArr.indexOf(bookName) >= 0) {
+    // Check whether the bookName parameter is in new array.
+    newArr.splice(newArr.indexOf(bookName), 1); // Remove the given paramater from the new array.
+    return newArr; // Return the new array.
+  }
+
+}
